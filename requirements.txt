@@ -1,0 +1,2 @@
+# Por ahora AppArch solo usa la librería estándar de Python (tkinter, sqlite3).
+# Este archivo queda listo para futuras dependencias.
