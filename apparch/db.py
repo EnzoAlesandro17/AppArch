@@ -8,8 +8,7 @@ from pathlib import Path
 
 
 def _default_data_dir() -> Path:
-    xdg_data_home = Path.home() / ".local" / "share"
-    data_dir = xdg_data_home / "apparch"
+    data_dir = Path(__file__).resolve().parent.parent / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
     return data_dir
 

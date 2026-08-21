@@ -16,7 +16,14 @@ python main.py
 ```
 
 Sin dependencias externas: solo librería estándar (`tkinter`, `sqlite3`).
-Los datos viven en `~/.local/share/apparch/apparch.db`, aparte del código.
+Los datos viven en `data/apparch.db`, dentro de la propia carpeta del
+proyecto (ignorado por git).
+
+El destino de backup (`~/apparch-backups` por defecto, configurable en la
+pestaña Backup) y las rutas de dotfiles que rastrea la pestaña
+Configuraciones sí apuntan fuera de la carpeta a propósito: es la función
+central de la app leer/copiar archivos reales del sistema, no estado propio
+del proyecto.
 
 ## Funcionalidad actual
 
